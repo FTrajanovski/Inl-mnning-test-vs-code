@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comment system</title>
+
+    <script src="/script.js" defer></script>
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+
+
+
+<style>
+
+
+
+
+</style>
+
+
+
+
+</head>
+
+ <body>
+
+
+
+
+<header>
+
+
+
+
+<h1>Välkommen till register systemet</h1>
+
+
+
+
+</header>
+
+
+
+
+<main>
+
+
+
+
+ <p>Detta är ett enkelt arbets register system.</p>
+
+
+
+
+
+  <h1>Arbets register</h1>
+
+
+
+
+  <table>
+
+
+
+
+  <thead>
+
+    <tr>
+
+    <th>Namn</th>
+
+    <th>Avdelning</th>
+
+    <th>Kommentar</th>
+
+    </tr>
+
+    </thead>
+
+    <tbody id="comments-table-body">
+
+
+
+
+    </tbody>
+
+
+
+
+    </table>
+
+
+
+
+
+
+<h2>Lägg till anställd</h2>
+
+
+
+
+
+
+
+<form id="comment-form" action="/add" method="post">
+
+
+
+
+<!-- form fields go here -->
+
+
+
+
+<label for="namn">Namn:</label>
+
+ <input type="text" id="namn-input" name="namn" required>
+
+
+
+
+ <label for="avdelning">Avdelning:</label>
+
+<input type="text" id="avdelning-input" name="avdelning" required>
+
+
+
+
+
+<label for="comment">Comment:</label>
+
+<textarea id="comment-input" name="comment" required></textarea>
+
+
+
+
+
+<button type="submit">Lägg till</button>
+
+ </form>
+
+
+
+
+<div id="comments-container"></div>
+
+
+
+
+<footer>
+
+
+
+
+<p>Created by [Filip Trajanovski] in [2023]</p>
+
+
+
+
+ </footer>
+
+
+
+
+</main>
+
+
+
+
+
+</html>
